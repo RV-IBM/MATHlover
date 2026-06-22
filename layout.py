@@ -292,7 +292,7 @@ with feat_col2:
     """, unsafe_allow_html=True)
 
 # Secondary clear call-to-action utilizing an alternative bright container theme color
-st.markdown('<div class="cyan-btn-container">', unsafe_html=True)
+st.markdown('<div class="cyan-btn-container">', unsafe_allow_html=True)
 demo_left, demo_center, demo_right = st.columns([1, 1.5, 1])
 with demo_center:
     if st.button("Try An AI Lesson Demo Now"):
