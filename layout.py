@@ -297,7 +297,7 @@ demo_left, demo_center, demo_right = st.columns([1, 1.5, 1])
 with demo_center:
     if st.button("Try An AI Lesson Demo Now"):
         st.toast("Loading sample lesson module workspace...", icon=None)
-st.markdown('</div>', unsafe_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- 4. WHY MATHLOVER BEATS EVERYONE ELSE ---
 
