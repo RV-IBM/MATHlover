@@ -210,7 +210,7 @@ st.markdown("""
         box-shadow: 0 6px 20px rgba(0, 240, 255, 0.6) !important;
     }
     </style>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # --- 1. TOP NAVIGATION BAR (STICKY HEADER) ---
 # Custom raw HTML header to cleanly present navigation tabs without layout shifting
@@ -225,21 +225,21 @@ st.markdown("""
         </div>
         <div class="streak-badge">5 Day Streak</div>
     </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # --- 2. HERO SECTION (ABOVE THE FOLD) ---
 # Displays primary brand messaging instantly when loading the homepage layout
 st.markdown(
     '<h1 class="hero-title">Master GCSE Maths Without the Boredom. <br>'
     '<span class="hero-highlight">Powered by AI.</span></h1>', 
-    unsafe_html=True
+    unsafe_allow_html=True
 )
 
 st.markdown(
     '<p class="hero-subtitle">MATHlover turns painful algebra and geometry into an interactive game. '
     'Get step-by-step guidance, track your mistakes in real-time, and smash your target GCSE grades '
     'with a patient, personal AI tutor built directly into your dashboard.</p>', 
-    unsafe_html=True
+    unsafe_allow_html=True
 )
 
 # Dopamine Trigger Action Box: Instant claiming of daily reward multiplier
@@ -248,7 +248,7 @@ st.markdown("""
         <h3 style="color: #00F0FF; margin-top:0;">Daily Reward Ready to Claim</h3>
         <p style="color: #E0D5FA; margin-bottom: 20px;">Claim your daily free lesson and secure plus 10 Experience Points to protect your streak status.</p>
     </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # Columns structure to keep the main primary activation button centered cleanly
 hero_left, hero_center, hero_right = st.columns([1, 2, 1])
@@ -258,7 +258,7 @@ with hero_center:
 
 # --- 3. CORE FEATURE DESCRIPTION BLOCKS ---
 # Explains the specific application value propositions for GCSE students and teachers
-st.markdown('<div class="section-header">How We Help You Conquer GCSE Maths</div>', unsafe_html=True)
+st.markdown('<div class="section-header">How We Help You Conquer GCSE Maths</div>', unsafe_allow_html=True)
 
 # Symmetrical multi-column card layout to outline product details cleanly
 feat_col1, feat_col2 = st.columns(2)
@@ -269,13 +269,13 @@ with feat_col1:
             <h4>Syllabus Aligned Material</h4>
             <p>Our curriculum matches current Edexcel, AQA, and OCR exam specification boards down to the exact sub-topic module.</p>
         </div>
-    """, unsafe_html=True)
+    """, unsafe_allow_html=True)
     st.markdown("""
         <div class="feature-card">
             <h4>Interactive Equation Scratchpad</h4>
             <p>Write out your formulas directly inside your interface windows. Our engine analyses exact step-by-step lines rather than scoring only your final answers.</p>
         </div>
-    """, unsafe_html=True)
+    """, unsafe_allow_html=True)
 
 with feat_col2:
     st.markdown("""
@@ -283,13 +283,13 @@ with feat_col2:
             <h4>Infinite Explanatory Patience</h4>
             <p>If an equation does not make sense, your AI companion instantly rewrites its approach using alternative graphics, real-world analogies, or simpler steps.</p>
         </div>
-    """, unsafe_html=True)
+    """, unsafe_allow_html=True)
     st.markdown("""
         <div class="feature-card">
             <h4>Dynamic Workspace Generation</h4>
             <p>Practice modules update based entirely on automated logs monitoring your historic problem-solving mistakes and weak mathematical targets.</p>
         </div>
-    """, unsafe_html=True)
+    """, unsafe_allow_html=True)
 
 # Secondary clear call-to-action utilizing an alternative bright container theme color
 st.markdown('<div class="cyan-btn-container">', unsafe_html=True)
